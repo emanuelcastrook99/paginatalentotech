@@ -3,61 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo Integrador</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Reseñas y Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Incluye aquí el CSS mejorado previamente */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Roboto", Arial, sans-serif;
+            line-height: 1.5;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(40deg, #333 0%, #008000 100%);
+            padding: 1em 2em;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 1.8em;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            margin: 0 0.5em;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            background-color: #444;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #008000;
+        }
+
+        .grid-container-resenas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2em;
+            padding: 2em;
+            background-color: #eee;
+        }
+
+        .resena {
+            background: linear-gradient(40deg, #333 0%, #fff 50%, #008000 100%);
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, background 0.3s;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .resena:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(40deg, #333 0%, #fff 70%, #44a44f 100%);
+        }
+
+        .imagen-resena {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #008000;
+            margin-bottom: 1em;
+            transition: transform 0.3s;
+        }
+
+        .resena:hover .imagen-resena {
+            transform: scale(1.1);
+        }
+
+        .producto {
+            background: linear-gradient(40deg, #333 0%, #fff 50%, #008000 100%);
+            padding: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+            background: linear-gradient(40deg, #333 0%, #fff 70%, #44a44f 100%);
+        }
+
+        .imagen-producto {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1em;
+        }
+
+        .boton-agregar {
+            padding: 0.5em 1em;
+            background-color: #008000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .boton-agregar:hover {
+            background-color: #005500;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
 </head>
 <body>
     <header>
-        <h1>Trabajo Integrador</h1>
+        <h1>Tienda de Libros Usados</h1>
         <nav>
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#contenido">Contenido</a></li>
-                <li><a href="#reseñas">Reseñas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Reseñas</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="inicio">
-            <h2>Bienvenidos</h2>
-            <p>Esta es una página creada para aprender desarrollo web.</p>
-        </section>
+    <section class="grid-container-resenas">
+        <div class="resena">
+            <img class="imagen-resena" src="https://via.placeholder.com/100" alt="Usuario 1">
+            <h3>Juan Pérez</h3>
+            <p>¡Excelente servicio! Encontré justo lo que buscaba y a muy buen precio.</p>
+        </div>
+        <div class="resena">
+            <img class="imagen-resena" src="https://via.placeholder.com/100" alt="Usuario 2">
+            <h3>María López</h3>
+            <p>Gran variedad de libros y el personal es muy amable. ¡Volveré pronto!</p>
+        </div>
+        <div class="resena">
+            <img class="imagen-resena" src="https://via.placeholder.com/100" alt="Usuario 3">
+            <h3>Carlos García</h3>
+            <p>La calidad de los libros usados es increíble. Parece que son nuevos.</p>
+        </div>
+    </section>
 
-        <section id="contenido">
-            <h2>Contenido Principal</h2>
-            <p>Aquí puedes incluir textos, imágenes y enlaces relacionados con el tema.</p>
-        </section>
-
-        <section id="reseñas">
-            <h2>Reseñas</h2>
-            <div class="reseña">
-                <h3>⭐⭐⭐⭐⭐</h3>
-                <p>"Una experiencia increíble, encontré justo lo que buscaba y el servicio fue excelente."</p>
-                <p class="autor">- Juan Pérez</p>
-            </div>
-            <div class="reseña">
-                <h3>⭐⭐⭐⭐</h3>
-                <p>"Buena variedad de libros, aunque algunos estaban agotados. Aun así, recomiendo el lugar."</p>
-                <p class="autor">- María García</p>
-            </div>
-            <div class="reseña">
-                <h3>⭐⭐⭐⭐⭐</h3>
-                <p>"El sitio perfecto para los amantes de los libros raros. ¡Volveré pronto!"</p>
-                <p class="autor">- Ana López</p>
-            </div>
-        </section>
-
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Deja tus comentarios o dudas aquí.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Trabajo Integrador</p>
-    </footer>
+    <section class="grid-container-productos">
+        <div class="producto">
+            <img class="imagen-producto" src="https://via.placeholder.com/300x150" alt="Producto 1">
+            <h3>Libro Clásico</h3>
+            <p class="precio-producto">$10</p>
+            <button class="boton-agregar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img class="imagen-producto" src="https://via.placeholder.com/300x150" alt="Producto 2">
+            <h3>Novela Romántica</h3>
+            <p class="precio-producto">$15</p>
+            <button class="boton-agregar">Agregar al Carrito</button>
+        </div>
+        <div class="producto">
+            <img class="imagen-producto" src="https://via.placeholder.com/300x150" alt="Producto 3">
+            <h3>Libro de Ciencia</h3>
+            <p class="precio-producto">$20</p>
+            <button class="boton-agregar">Agregar al Carrito</button>
+        </div>
+    </section>
 </body>
 </html>
 
