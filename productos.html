@@ -6,133 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reseñas y Productos</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Incluye aquí el CSS mejorado previamente */
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: "Roboto", Arial, sans-serif;
-            line-height: 1.5;
-            background-color: #f5f5f5;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: linear-gradient(40deg, #333 0%, #008000 100%);
-            padding: 1em 2em;
-            color: white;
-        }
-
-        header h1 {
-            font-size: 1.8em;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            margin: 0 0.5em;
-            padding: 0.5em 1em;
-            border-radius: 5px;
-            background-color: #444;
-            transition: background 0.3s;
-        }
-
-        nav ul li a:hover {
-            background-color: #008000;
-        }
-
-        .grid-container-resenas {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2em;
-            padding: 2em;
-            background-color: #eee;
-        }
-
-        .resena {
-            background: linear-gradient(40deg, #333 0%, #fff 50%, #008000 100%);
-            padding: 2em;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s, background 0.3s;
-            animation: fadeIn 0.5s ease-in-out;
-        }
-
-        .resena:hover {
-            transform: translateY(-5px);
-            background: linear-gradient(40deg, #333 0%, #fff 70%, #44a44f 100%);
-        }
-
-        .imagen-resena {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 2px solid #008000;
-            margin-bottom: 1em;
-            transition: transform 0.3s;
-        }
-
-        .resena:hover .imagen-resena {
-            transform: scale(1.1);
-        }
-
-        .producto {
-            background: linear-gradient(40deg, #333 0%, #fff 50%, #008000 100%);
-            padding: 1.5em;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s, background 0.3s;
-        }
-
-        .producto:hover {
-            transform: translateY(-5px);
-            background: linear-gradient(40deg, #333 0%, #fff 70%, #44a44f 100%);
-        }
-
-        .imagen-producto {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 1em;
-        }
-
-        .boton-agregar {
-            padding: 0.5em 1em;
-            background-color: #008000;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .boton-agregar:hover {
-            background-color: #005500;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-    </style>
 </head>
 <body>
     <header>
@@ -147,8 +20,8 @@
     </header>
   <section class="grid-container-productos">
         <div class="producto">
-            <img class="imagen-producto" src="https://via.placeholder.com/300x150" alt="Producto 1">
-            <h3>Libro Clásico</h3>
+            <img class="imagen-producto" src="/img/librof.jpeg" alt="Producto 1" width="300" height="150">
+            <h3>Libro fisica</h3>
             <p class="precio-producto">$10</p>
             <button class="boton-agregar">Agregar al Carrito</button>
         </div>
