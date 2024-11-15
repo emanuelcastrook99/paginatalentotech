@@ -92,6 +92,26 @@ nav ul li a:hover {
     margin: 0 auto;
     line-height: 1.6;
 }
+.presentacion {
+    position: relative;
+    background: url('https://github.com/emanuelcastrook99/entrenamiento/blob/main/imagenes/fondol.png?raw=true') no-repeat center center/cover;
+    text-align: center;
+    padding: 3em 2em;
+    margin: 2em 0;
+    min-height: 300px;
+}
+
+.presentacion::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Capa de fondo oscuro translúcido */
+    z-index: -1;
+}
+
 
 /* Sección Quiénes somos */
 .quienes-somos {
@@ -124,13 +144,6 @@ nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.presentacion {
-    background: url('https://github.com/emanuelcastrook99/entrenamiento/blob/main/imagenes/fondol.png?raw=true') no-repeat center center/cover;
-    text-align: center;
-    padding: 3em 2em;
-    margin: 2em 0;
-}
-
 /* Reviews Section */
 .grid-container-resenas {
     display: grid;
