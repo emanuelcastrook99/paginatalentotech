@@ -70,6 +70,7 @@ nav ul li a:hover {
 .inicio p {
     font-size: 1.2em;
 }
+
 /* Sección Presentación */
 .presentacion {
     background: linear-gradient(40deg, #eee 0%, #f5f5f5 100%);
@@ -96,6 +97,7 @@ nav ul li a:hover {
 .quienes-somos {
     background-color: #fff;
     padding: 3em 2em;
+    margin: 2em 0;
 }
 
 .quienes-somos h2 {
@@ -257,18 +259,7 @@ nav ul li a:hover {
     color: #bbb;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .container-footer {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+/* Redes sociales */
 .redes {
     display: flex;
     gap: 1em;
@@ -359,7 +350,7 @@ footer .menu-footer li a {
 }
 
 footer .menu-footer li a:hover {
-    color: #44a44f;
+    color: #bbb;
 }
 
 footer .redes a {
@@ -370,7 +361,7 @@ footer .redes a {
 }
 
 footer .redes a:hover {
-    color: #44a44f;
+    color: #bbb;
 }
 
 
