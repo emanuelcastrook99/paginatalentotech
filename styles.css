@@ -102,7 +102,7 @@ nav ul li a:hover {
 }
 
 .presentacion img {
-    filter: opacity(0.5); /* Aplica opacidad a la imagen de fondo */
+    filter: opacity(0.2); /* Aplica opacidad a la imagen de fondo */
 }
 
 
