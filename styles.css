@@ -271,5 +271,54 @@ nav ul li a:hover {
 .menu-footer a:hover {
     color: #bbb;
 }
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2em 1em;
+}
+
+footer .logo-copyright-footer img {
+    width: 80px;
+    margin-bottom: 1em;
+}
+
+footer .copyright {
+    margin: 1em 0;
+    font-size: 0.9em;
+}
+
+footer .menu-footer {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+footer .menu-footer li {
+    margin: 0 1em;
+}
+
+footer .menu-footer li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer .menu-footer li a:hover {
+    color: #44a44f;
+}
+
+footer .redes a {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0 0.5em;
+    transition: color 0.3s;
+}
+
+footer .redes a:hover {
+    color: #44a44f;
+}
 
 
