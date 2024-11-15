@@ -182,15 +182,16 @@ nav ul li a:hover {
 
 .producto {
     background: linear-gradient(145deg, #ffffff, #f4f4f4);
-    padding: 1em;
+    padding: 1.5em;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 
 .producto:hover {
     transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Más sombra */
+    background: linear-gradient(145deg, #f4f4f4, #e0e0e0); /* Cambio de color de fondo */
 }
 
 .imagen-producto {
@@ -199,10 +200,11 @@ nav ul li a:hover {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1em;
+    min-height: 150px; /* Para mantener la altura */
 }
 
 .nombre-producto {
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 0.5em;
     color: #333;
@@ -215,19 +217,21 @@ nav ul li a:hover {
 }
 
 .boton-agregar {
-    padding: 0.5em 1em;
+    padding: 0.8em 1.2em;
     background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.3s;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .boton-agregar:hover {
     background-color: #666;
     transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Añadir sombra en hover */
 }
+
 
 /* Footer */
 .container-footer {
