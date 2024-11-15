@@ -70,6 +70,58 @@ nav ul li a:hover {
 .inicio p {
     font-size: 1.2em;
 }
+/* Sección Presentación */
+.presentacion {
+    background: linear-gradient(40deg, #eee 0%, #f5f5f5 100%);
+    text-align: center;
+    padding: 3em 2em;
+    margin: 2em 0;
+}
+
+.presentacion h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.presentacion p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Sección Quiénes somos */
+.quienes-somos {
+    background-color: #fff;
+    padding: 3em 2em;
+}
+
+.quienes-somos h2 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.quienes-somos p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 2em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.quienes-somos .imagen-equipo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 /* Reviews Section */
 .grid-container-resenas {
