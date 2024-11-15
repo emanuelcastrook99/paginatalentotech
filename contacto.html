@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas y Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://github.com/emanuelcastrook99/entrenamiento/blob/main/imagenes/logo.png?raw=true" alt="libro logo">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <i class="fa-solid fa-cart-shopping" id="icon_cart"></i>  
+    </header>
+<main>
+  <section>
+    <div class="titulo-seccion">
+      <p>Contáctese con nosotros</p>
+    </div>
+    <div class="formulario-mapa">
+      <div class="formulario">
+        <form action="https://formspree.io/f/xzzbpzyy" method="post">
+          <div class="nombre-form">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre">
+          </div>
+          <div class="apellido-form">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" required placeholder="Ingrese su apellido">
+          </div>
+          <div class="email-form">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required placeholder="Ingrese su E-mail">
+          </div>
+          <div class="mensaje-form">
+            <label for="mensaje">Deje su mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje"></textarea>
+          </div>
+          <div class="botones">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+          </div>
+        </form>
+      </div>
+      <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27219.38518129384!2d-57.83957628725469!3d-35.02710544533753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1730582872258!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+    <footer class="container-footer">
+        <div class="logo-copyright-footer">
+            <img src="https://github.com/emanuelcastrook99/entrenamiento/blob/main/imagenes/logo.png?raw=true" style="width: 20%; height: auto;">
+            <p class="copyright">© 2024 Re Libros. Todos los derechos reservados.</p>
+        </div>
+        <ul class="menu-footer">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="redes">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        </div>
+    </footer>
+   
+</body>
+</html>
