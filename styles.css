@@ -371,7 +371,13 @@ iframe {
 }
 
 .precio-producto {
-    font-size:
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.precio-producto p {
+    color: rgb(0, 128, 0);
+}
 
 
 
