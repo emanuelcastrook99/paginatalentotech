@@ -1,60 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reseñas y Productos</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <img src="https://github.com/emanuelcastrook99/entrenamiento/blob/main/imagenes/logo.png?raw=true" alt="libro logo">
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <title>TP Talento Tech JS</title><!--para solapita-->  
+    <link rel="icon" href="img/favicon-loki.ico" type="image/ico"><!--para solapita-->      
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--tipografía de Google Fonts, igual para todos-->  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--tipografía de Google Fonts, igual para todos-->  
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><!--tipografía de Google Fonts-->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!--iconos con CDN (no Font Awesome)-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+    <header class="header-productos">
+      <a href="index.html"> <img src="img/logo-talentoshop.png" alt="LogoHomo" title="Inicio"></a>
+      <nav>
+        <a href="productos.html" target="_self">Productos</a>
+        <a href="resenias.html">Reseñas</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+      <a href="carrito.html" class="carrito"> <i class="fas fa-shopping-cart"></i></a>
     </header>
-  <section class="grid-container-producto">
-        <div class="producto">
-            <img class="imagen-producto" src="./imagenes/librof.jpeg" alt="Producto 1">
-            <h3>Libro fisica</h3>
-            <p class="precio-producto">$10</p>
-            <button class="boton-agregar">Agregar al Carrito</button>
-        </div>
-        <div class="producto">
-            <img class="imagen-producto" src="./imagenes/libroq.jpeg" alt="Producto 2">
-            <h3>libro quimica</h3>
-            <p class="precio-producto">$15</p>
-            <button class="boton-agregar">Agregar al Carrito</button>
-        </div>
-        <div class="producto">
-            <img class="imagen-producto" src="./imagenes/libroc.jpeg" alt="Producto 3">
-            <h3>Libro calculo</h3>
-            <p class="precio-producto">$20</p>
-            <button class="boton-agregar">Agregar al Carrito</button>
-        </div>
-     </section>
+    
+    <main class="main-productos">
+      <section class="grilla" id="grilla"> <!-- clase con BEM para CSS y el ID para JS -->
+      </section>
+      
+      <!-- Paginación -->
+      <div class="paginator"> <!-- Bloque de Paginación -->
+        <button id="paginator__btn-previous" class="paginator__btn-previous">Anterior</button>
+        <span id="paginator__page-info" class="paginator__page-info"></span>
+        <button id="paginator__btn-next" class="paginator__btn-next">Siguiente</button>
+      </div>
 
-    <footer class="container-footer">
-        <div class="logo-copyright-footer">
-            <img src="https://github.com/emanuelcastrook99/entrenamiento/blob/main/imagenes/logo.png?raw=true" style="width: 20%; height: auto;">
-            <p class="copyright">© 2024 Re Libros. Todos los derechos reservados.</p>
+    </main> <!-- Aquí se cierra la etiqueta main -->
+
+    <footer>
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a> 
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-google-plus"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div> 
+
+        <div class="footerNav">
+          <ul>
+            <li><a href="index.html">LOKI BAZAR</a></li>
+            <li><a href="productos.html" target="_self">Productos</a></li>
+            <li><a href="resenias.html">Reseñas</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
         </div>
-        <ul class="menu-footer">
-             <li><a href="./index.html">Inicio</a></li>
-             <li><a href="productos.html">Productos</a></li>
-             <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <div class="redes">
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
-        </div>
+        
+      </div>
+      <div class="footerBottom">
+        <p>Copyright &copy; Diseñado por <span class="designer">Miguel Angel Lardo</span></p> 
+      </div>
     </footer>
-   
-</body>
+
+    <script src="js/productosApi.js"></script>
+  </body>
 </html>
+
