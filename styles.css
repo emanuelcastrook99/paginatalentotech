@@ -14,7 +14,7 @@ header {
     height: 8rem;
     background: linear-gradient(40deg, rgba(51,51,51,0.99) 0%, rgba(51,51,51,0.99) 95%, rgba(0,128,0,0.57) 100%);
     padding: 1rem 0;
-    border-bottom: 0.5rem solid green;
+    border-bottom: 0.5rem solid #00FFFF;
 }
 
 header img {
@@ -44,7 +44,7 @@ nav li a {
     padding: 0.4rem;
     color: #FFF;
     background-color: #333;
-    border: 0.1rem solid green;
+    border: 0.1rem solid #00FFFF;
     border-radius: 0.4rem;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -55,7 +55,7 @@ nav li a:hover {
 }
 
 .navbar-toggler {
-    border: 0.1rem solid green;
+    border: 0.1rem solid #00FFFF;
     border-radius: 0.3rem;
 }
 
@@ -80,7 +80,7 @@ nav li a:hover {
 
 .icon_cart:hover {
     color: #fff;
-    border: 0.2rem solid #fff;
+    border: 0.2rem solid #00FFFF;
 }
 
 #contadorCarrito {
@@ -90,7 +90,7 @@ nav li a:hover {
 /* ----------------------- SECCIÓN INICIO ----------------------- */
 .inicio {
     background-color: rgb(51, 51, 51);
-    border-bottom: 0.5rem solid green;
+    border-bottom: 0.5rem solid #00FFFF;
 }
 
 .titulo-inicio {
@@ -107,7 +107,7 @@ nav li a:hover {
 
 .imagen-inicio {
     width: 100%;
-    border-bottom: 0.5rem solid green;
+    border-bottom: 0.5rem solid #00FFFF;
 }
 
 /* ----------------------- SECCIÓN RESEÑAS ----------------------- */
@@ -115,14 +115,14 @@ nav li a:hover {
     height: 100%;
     background-image: linear-gradient(rgba(253, 249, 249, 0.5), rgba(51, 51, 51, 0.9)), url("./img/tractor-6704118_1280.jpg");
     background-size: cover;
-    border-bottom: 0.5rem solid green;
+    border-bottom: 0.5rem solid #00FFFF;
 }
 
 .titulo-seccion {
     display: flex;
     justify-content: center;
     padding: 2rem;
-    border-bottom: 0.1rem solid green;
+    border-bottom: 0.1rem solid #00FFFF;
 }
 
 .titulo-seccion p {
@@ -161,7 +161,7 @@ nav li a:hover {
 .imagen-resena {
     width: 10em;
     border-radius: 50%;
-    border: 0.2rem solid green;
+    border: 0.2rem solid #00FFFF;
 }
 
 .resena p {
@@ -208,7 +208,7 @@ nav li a:hover {
     padding: 1rem;
     background: linear-gradient(40deg, rgba(51,51,51,0.99) 0%, rgba(51,51,51,0.99) 95%, rgba(0,128,0,0.57) 100%);
     color: #fff;
-    border-top: 0.5rem solid #FFF;
+    border-top: 0.5rem solid #00FFFF;
 }
 
 .img-footer {
@@ -244,7 +244,7 @@ nav li a:hover {
 }
 
 .menu-footer a:hover {
-    color: green;
+    color: #00FFFF;
 }
 
 .redes i {
@@ -255,7 +255,7 @@ nav li a:hover {
 }
 
 .redes i:hover {
-    color: green;
+    color: #00FFFF;
 }
 
 /* ----------------------- FORMULARIO Y MAPA ----------------------- */
@@ -338,14 +338,14 @@ iframe {
 
 .producto {
     background: linear-gradient(40deg, rgba(51,51,51,0.56) 0%, rgba(255,255,255,0.75) 6%, rgba(255,255,255,0.75) 95%, rgba(0,128,0,0.57) 100%);
-    border: 0.1rem solid rgb(0, 128, 0);
+    border: 0.1rem solid #00FFFF;
     border-radius: 0.5rem;
     transition: background-color 0.3s, border 0.3s;
 }
 
 .producto:hover {
     background: linear-gradient(40deg, rgba(51,51,51,0.56) 0%, rgba(255,255,255,0.75) 30%, rgba(255,255,255,0.75) 70%, rgba(0,128,0,0.57) 100%);
-    border: 0.1rem solid black;
+    border: 0.1rem solid #00FFFF;
 }
 
 .imagen-producto {
@@ -378,7 +378,5 @@ iframe {
 .precio-producto p {
     color: rgb(0, 128, 0);
 }
-
-
 
 
