@@ -1,3 +1,15 @@
+/* Variables CSS */
+:root {
+    --color-principal: #0b5ed7;
+    --color-secundario: #333;
+    --color-fondo: rgb(51, 51, 51);
+    --color-texto: #FFF;
+    --color-hover: #0b5ed7;
+    --color-sombra: rgba(0, 0, 0, 0.2);
+    --color-gris: #666;
+    --color-blanco: #FFF;
+}
+
 /* Reset de márgenes y relleno global */
 * {
     margin: 0;
@@ -12,9 +24,9 @@ header {
     align-items: center;
     width: 100%;
     height: 8rem;
-    background: linear-gradient(40deg, rgba(51,51,51,0.99) 0%, rgba(51,51,51,0.99) 95%, rgba(11,94,215,0.57) 100%);
+    background: linear-gradient(40deg, var(--color-fondo) 0%, var(--color-fondo) 95%, rgba(11,94,215,0.57) 100%);
     padding: 1rem 0;
-    border-bottom: 0.5rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
+    border-bottom: 0.5rem solid var(--color-principal);
 }
 
 header img {
@@ -42,29 +54,29 @@ nav li a {
     text-decoration: none;
     line-height: 1.5rem;
     padding: 0.4rem;
-    color: #FFF;
-    background-color: #333;
-    border: 0.1rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
+    color: var(--color-texto);
+    background-color: var(--color-secundario);
+    border: 0.1rem solid var(--color-principal);
     border-radius: 0.4rem;
     transition: background-color 0.3s, color 0.3s;
 }
 
 nav li a:hover {
-    color: #333;
-    background-color: #FFF;
+    color: var(--color-secundario);
+    background-color: var(--color-texto);
 }
 
 .navbar-toggler {
-    border: 0.1rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
+    border: 0.1rem solid var(--color-principal);
     border-radius: 0.3rem;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .navbar-toggler:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 /* Icono de carrito */
@@ -79,8 +91,8 @@ nav li a:hover {
 }
 
 .icon_cart:hover {
-    color: #fff;
-    border: 0.2rem solid #0b5ed7; /* Celeste */
+    color: var(--color-texto);
+    border: 0.2rem solid var(--color-principal);
 }
 
 #contadorCarrito {
@@ -89,8 +101,8 @@ nav li a:hover {
 
 /* ----------------------- SECCIÓN INICIO ----------------------- */
 .inicio {
-    background-color: rgb(51, 51, 51);
-    border-bottom: 0.5rem solid #0b5ed7; /* Celeste */
+    background-color: var(--color-fondo);
+    border-bottom: 0.5rem solid var(--color-principal);
 }
 
 .titulo-inicio {
@@ -100,14 +112,15 @@ nav li a:hover {
 }
 
 .titulo-inicio p {
-    color: #FFF;
-    background-color: #333;
+    color: var(--color-texto);
+    background-color: var(--color-secundario);
     font-size: 1.2rem;
+    text-shadow: 2px 2px 5px var(--color-gris);
 }
 
 .imagen-inicio {
     width: 100%;
-    border-bottom: 0.5rem solid #0b5ed7; /* Celeste */
+    border-bottom: 0.5rem solid var(--color-principal);
 }
 
 /* ----------------------- SECCIÓN RESEÑAS ----------------------- */
@@ -115,21 +128,21 @@ nav li a:hover {
     height: 100%;
     background-image: linear-gradient(rgba(253, 249, 249, 0.5), rgba(51, 51, 51, 0.9)), url("./img/tractor-6704118_1280.jpg");
     background-size: cover;
-    border-bottom: 0.5rem solid #0b5ed7; /* Celeste */
+    border-bottom: 0.5rem solid var(--color-principal);
 }
 
 .titulo-seccion {
     display: flex;
     justify-content: center;
     padding: 2rem;
-    border-bottom: 0.1rem solid #0b5ed7; /* Celeste */
+    border-bottom: 0.1rem solid var(--color-principal);
 }
 
 .titulo-seccion p {
     font-size: 2rem;
-    color: #fff;
-    background-color: #0b5ed7;
-    border: 0.05rem solid #0b5ed7; /* Celeste */
+    color: var(--color-texto);
+    background-color: var(--color-principal);
+    border: 0.05rem solid var(--color-principal);
     border-radius: 0.3rem;
     padding: 0.5rem;
 }
@@ -149,20 +162,21 @@ nav li a:hover {
     background: linear-gradient(40deg, rgba(51,51,51,0.56) 0%, rgba(255,255,255,0.75) 6%, rgba(255,255,255,0.75) 95%, rgba(11,94,215,0.57) 100%);
     margin: 2rem;
     padding: 2rem;
-    border: 0.1rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
+    border: 0.1rem solid var(--color-principal);
     border-radius: 0.5rem;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .resena:hover {
     background: linear-gradient(40deg, rgba(51,51,51,0.56) 0%, rgba(255,255,255,0.75) 30%, rgba(255,255,255,0.75) 70%, rgba(11,94,215,0.57) 100%);
-    border: 0.1rem solid #0b5ed7; /* Celeste */
+    border: 0.1rem solid var(--color-principal);
+    box-shadow: 0 4px 10px var(--color-sombra);
 }
 
 .imagen-resena {
     width: 10em;
     border-radius: 50%;
-    border: 0.2rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
+    border: 0.2rem solid var(--color-principal);
 }
 
 .resena p {
@@ -187,19 +201,19 @@ nav li a:hover {
 
 .links-section-inicio a {
     font-size: 2rem;
-    color: #FFF;
+    color: var(--color-texto);
     margin: 0.5rem;
     padding: 2rem;
-    border: 0.01rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
+    border: 0.01rem solid var(--color-principal);
     border-radius: 0.2rem;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .links-section-inicio a:hover {
-    color: #FFF;
+    color: var(--color-texto);
     background: linear-gradient(40deg, rgba(0,128,0,0.56) 0%, rgba(51,51,51,0.50) 6%, rgba(51,51,51,0.50) 95%, rgba(11,94,215,0.57) 100%);
-    border: 0.01rem solid #0b5ed7; /* Celeste */
+    border: 0.01rem solid var(--color-principal);
 }
 
 /* ----------------------- FOOTER ----------------------- */
@@ -207,9 +221,9 @@ nav li a:hover {
     display: flex;
     justify-content: space-around;
     padding: 1rem;
-    background: linear-gradient(40deg, rgba(51,51,51,0.99) 0%, rgba(51,51,51,0.99) 95%, rgba(11,94,215,0.57) 100%);
-    color: #fff;
-    border-top: 0.5rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
+    background: linear-gradient(40deg, var(--color-fondo) 0%, var(--color-fondo) 95%, rgba(11,94,215,0.57) 100%);
+    color: var(--color-texto);
+    border-top: 0.5rem solid var(--color-principal);
 }
 
 .img-footer {
@@ -239,24 +253,24 @@ nav li a:hover {
 }
 
 .menu-footer a {
-    color: #fff;
+    color: var(--color-texto);
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .menu-footer a:hover {
-    color: #0b5ed7; /* Celeste */
+    color: var(--color-principal);
 }
 
 .redes i {
-    color: #fff;
+    color: var(--color-texto);
     padding: 1rem;
     font-size: 1.1rem;
     transition: color 0.3s;
 }
 
 .redes i:hover {
-    color: #0b5ed7; /* Celeste */
+    color: var(--color-principal);
 }
 
 /* ----------------------- FORMULARIO Y MAPA ----------------------- */
@@ -284,9 +298,9 @@ form > div {
 form label {
     font-size: 1.1rem;
     padding: 0.1rem;
-    color: #fff;
-    background-color: #333;
-    border: 0.1em solid #0b5ed7; /* Celeste */
+    color: var(--color-texto);
+    background-color: var(--color-secundario);
+    border: 0.1em solid var(--color-principal);
     border-radius: 0.2rem;
 }
 
@@ -295,9 +309,10 @@ form label {
     padding: 0.5rem;
     margin-top: 0.5rem;
     width: 20em;
-    border: 0.1em solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
+    border: 0.1em solid var(--color-principal);
     border-radius: 0.5rem;
 }
+
 #mensaje {
     height: 10rem;
 }
@@ -305,22 +320,22 @@ form label {
 .botones > input {
     font-size: 1.1rem;
     height: 2.5rem;
-    color: #fff;
-    background-color: rgb(11,94,215);
-    border: 0.1rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
+    color: var(--color-texto);
+    background-color: var(--color-principal);
+    border: 0.1rem solid var(--color-principal);
     border-radius: 0.5rem;
     transition: background-color 0.3s;
 }
 
 .botones > input:hover {
-    background-color: #0b5ed7;
+    background-color: var(--color-secundario);
 }
 
 /* Mapa */
 iframe {
     width: 500px;
     height: 500px;
-    border: 0.1rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
+    border: 0.1rem solid var(--color-principal);
     border-radius: 0.5rem;
 }
 
@@ -330,44 +345,4 @@ iframe {
 }
 
 .producto {
-    background: linear-gradient(40deg, rgba(51,51,51,0.56) 0%, rgba(255,255,255,0.75) 6%, rgba(255,255,255,0.75) 95%, rgba(11,94,215,0.57) 100%);
-    border: 0.1rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
-    border-radius: 0.5rem;
-    transition: background-color 0.3s, border 0.3s;
-}
-
-.producto:hover {
-    background: linear-gradient(40deg, rgba(51,51,51,0.56) 0%, rgba(255,255,255,0.75) 30%, rgba(255,255,255,0.75) 70%, rgba(11,94,215,0.57) 100%);
-    border: 0.1rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
-}
-
-.imagen-producto {
-    width: auto;
-    height: 20rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
-    transition: border 0.3s;
-}
-
-.imagen-producto:hover {
-    border: 0.12rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
-    transition-duration: 50ms;
-}
-
-.nombre-producto,
-.precio-producto {
-    padding: 1rem 0;
-}
-
-.valoracion {
-    color: rgb(11,94,215);
-}
-
-.precio-producto {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.precio-producto p {
-    color: rgb(11,94,215);
-}
+    background: linear-gradient(40deg, rgba(51,51,51,0.56) 0%, rgba(255,255,255,0.75) 
