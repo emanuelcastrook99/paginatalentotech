@@ -1,9 +1,9 @@
 # Proyecto Re libros
-#alumno: emanuel marcelo castro cabezas
+#alumno: Emanuel Marcelo Castro Cabezas
 #talento tech
 ## 📋 Descripción
 pagina web donde venderemos libros y compraremos libros usados donde podran contactarnos
 ##Este repositorio tiene como ojetivo implementar los conceptos vistos en clase.
 ## 🛠 Tecnologías Utilizadas
-- *Frontend*: HTML, CSS (Bootstrap)
-
+##Las herramientos utilizadas son HTML5 - CSS - Javascript - Manejo del DOM - Conceptos de Flex y Grid - Media Queries - Bootstrap.
+##Banco de imágenes utilizado: Pexels. ##API de prueba: Fake Store API
