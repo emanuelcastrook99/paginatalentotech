@@ -181,7 +181,7 @@ nav li a:hover {
 .links-section-inicio {
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(rgba(51, 51, 51, 0.95), rgba(0, 128, 0, 0.95)), url("./img/tractor-5753374_1280.jpg");
+    background-image: linear-gradient(rgba(51, 51, 51, 0.95), rgba(11,94,215, 0.95)), url("./img/tractor-5753374_1280.jpg");
     background-size: cover;
 }
 
@@ -198,7 +198,7 @@ nav li a:hover {
 
 .links-section-inicio a:hover {
     color: #FFF;
-    background: linear-gradient(40deg, rgba(0,128,0,0.56) 0%, rgba(51,51,51,0.50) 6%, rgba(51,51,51,0.50) 95%, rgba(0,128,0,0.57) 100%);
+    background: linear-gradient(40deg, rgba(0,128,0,0.56) 0%, rgba(51,51,51,0.50) 6%, rgba(51,51,51,0.50) 95%, rgba(11,94,215,0.57) 100%);
     border: 0.01rem solid #0b5ed7; /* Celeste */
 }
 
@@ -207,7 +207,7 @@ nav li a:hover {
     display: flex;
     justify-content: space-around;
     padding: 1rem;
-    background: linear-gradient(40deg, rgba(51,51,51,0.99) 0%, rgba(51,51,51,0.99) 95%, rgba(0,128,0,0.57) 100%);
+    background: linear-gradient(40deg, rgba(51,51,51,0.99) 0%, rgba(51,51,51,0.99) 95%, rgba(11,94,215,0.57) 100%);
     color: #fff;
     border-top: 0.5rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
 }
