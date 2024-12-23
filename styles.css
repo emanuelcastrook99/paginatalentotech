@@ -17,7 +17,6 @@ header {
     border-bottom: 0.5rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
 }
 
-
 header img {
     width: 25rem;
 }
@@ -59,6 +58,7 @@ nav li a:hover {
     border: 0.1rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
     border-radius: 0.3rem;
 }
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
@@ -212,7 +212,6 @@ nav li a:hover {
     border-top: 0.5rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
 }
 
-
 .img-footer {
     width: 15rem;
     margin: 1.1rem 0;
@@ -324,12 +323,6 @@ iframe {
     border: 0.1rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
     border-radius: 0.5rem;
 }
-iframe {
-    width: 500px;
-    height: 500px;
-    border: 0.1rem solid #0b5ed7; /* Celeste */
-    border-radius: 0.5rem;
-}
 
 /* ----------------------- PRODUCTOS ----------------------- */
 .container-producto {
@@ -355,6 +348,7 @@ iframe {
     border-radius: 0.5rem;
     transition: border 0.3s;
 }
+
 .imagen-producto:hover {
     border: 0.12rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
     transition-duration: 50ms;
@@ -377,6 +371,3 @@ iframe {
 .precio-producto p {
     color: rgb(11,94,215);
 }
-
-
-
