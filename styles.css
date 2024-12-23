@@ -146,7 +146,7 @@ nav li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(40deg, rgba(51,51,51,0.56) 0%, rgba(255,255,255,0.75) 6%, rgba(255,255,255,0.75) 95%, rgba(0,128,0,0.57) 100%);
+    background: linear-gradient(40deg, rgba(51,51,51,0.56) 0%, rgba(255,255,255,0.75) 6%, rgba(255,255,255,0.75) 95%, rgba(11,94,215,0.57) 100%);
     margin: 2rem;
     padding: 2rem;
     border: 0.1rem solid #0b5ed7; /* Bordes cambiados a #0b5ed7 */
@@ -155,7 +155,7 @@ nav li a:hover {
 }
 
 .resena:hover {
-    background: linear-gradient(40deg, rgba(51,51,51,0.56) 0%, rgba(255,255,255,0.75) 30%, rgba(255,255,255,0.75) 70%, rgba(0,128,0,0.57) 100%);
+    background: linear-gradient(40deg, rgba(51,51,51,0.56) 0%, rgba(255,255,255,0.75) 30%, rgba(255,255,255,0.75) 70%, rgba(11,94,215,0.57) 100%);
     border: 0.1rem solid #0b5ed7; /* Celeste */
 }
 
